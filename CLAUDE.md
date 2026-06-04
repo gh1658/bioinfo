@@ -99,9 +99,36 @@ tags: [tag1, tag2]
 - `admixture_pca_tree/` — 群体结构分析结果
 - `tools/` — 第三方工具（IQ-TREE 等）
 
+## 收件箱机制（Codex 等其他工具集成）
+
+其他工具（如 Codex）可以通过 `ingest.sh` 脚本写入知识库收件箱：
+
+```bash
+# 从 Codex 或其他工具写入
+echo "分析内容..." | bash ~/bioinfo-kb/ingest.sh
+
+# 摄入脚本
+bash ~/bioinfo-kb/ingest.sh -s /path/to/script.sh
+
+# 摄入消息
+bash ~/bioinfo-kb/ingest.sh -m "跑了 XXX 分析，参数是..."
+```
+
+`ingest.sh` 会将内容写入 `inbox/` 目录并自动 git commit。
+
+### 处理收件箱
+
+当用户说 **"整理知识库"** 或 **"处理收件箱"** 时：
+1. 读取 `inbox/` 下所有 `.md` 文件
+2. 将每条记录整理成正式的 wiki 页面
+3. 更新 `index.md`
+4. 将已处理的 inbox 文件移到 `inbox/archive/`
+5. Git commit
+
 ## 注意事项
 
 - 不要修改 `raw/` 目录下的文件，它们是原始材料的副本
 - 每次 ingest 后运行 `git add -A && git commit` 保存变更
 - 双向链接用 Obsidian 语法 `[[页面名]]`
 - 参数记录要包含日期和版本，因为参数会随时间迭代
+- `ingest.sh` 可供任何工具调用，不限于 Claude Code
