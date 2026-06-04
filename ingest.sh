@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ~/bioinfo-kb/ingest.sh — 通用知识库摄入脚本
+# /data1/gh/bioinfo-kb/ingest.sh — 通用知识库摄入脚本
 # 用法：
 #   echo "..." | bash ingest.sh                    # 标准输入
 #   bash ingest.sh -f /path/to/note.md             # 从文件

@@ -11,9 +11,8 @@ echo '## DeepVariant 运行记录
 - 样本: SY-P2-1
 - 参数: threads=8
 - 结果: /path/to/output.vcf.gz
-' | bash ~/bioinfo-kb/ingest.sh
+' | bash /data1/gh/bioinfo-kb/ingest.sh
 ```
 
 ### 从 Claude Code
 直接说：**"整理知识库收件箱"** 或 **"处理 inbox"**
-

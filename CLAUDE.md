@@ -7,7 +7,7 @@
 ## 目录结构
 
 ```
-~/bioinfo-kb/
+/data1/gh/bioinfo-kb/
 ├── CLAUDE.md           # 本文件——规则与约定
 ├── index.md            # 内容目录（每次操作后自动更新）
 ├── log.md              # 操作日志（追加写入）
@@ -70,6 +70,16 @@ tags: [tag1, tag2]
 
 ## 更新策略
 
+### Codex 任务记录规则
+
+在 `/data1/gh/sy/vcf` 项目中，每完成一项分析、任务或流程后，都要把以下信息写入知识库：
+- 所用脚本及路径
+- 确定使用的参数和版本
+- 运行中遇到的主要问题及解决方法
+- 关键输出路径和结果摘要
+
+优先用 `ingest.sh` 写入收件箱；当用户要求“整理知识库”或“处理收件箱”时，再整理为正式 wiki 页面。
+
 ### Ingest（摄入新内容）
 1. 读取原始材料（脚本、日志）
 2. 理解做了什么
@@ -105,13 +115,13 @@ tags: [tag1, tag2]
 
 ```bash
 # 从 Codex 或其他工具写入
-echo "分析内容..." | bash ~/bioinfo-kb/ingest.sh
+echo "分析内容..." | bash /data1/gh/bioinfo-kb/ingest.sh
 
 # 摄入脚本
-bash ~/bioinfo-kb/ingest.sh -s /path/to/script.sh
+bash /data1/gh/bioinfo-kb/ingest.sh -s /path/to/script.sh
 
 # 摄入消息
-bash ~/bioinfo-kb/ingest.sh -m "跑了 XXX 分析，参数是..."
+bash /data1/gh/bioinfo-kb/ingest.sh -m "跑了 XXX 分析，参数是..."
 ```
 
 `ingest.sh` 会将内容写入 `inbox/` 目录并自动 git commit。
