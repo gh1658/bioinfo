@@ -13,7 +13,7 @@ tags: [variant-counts, qc, filtering]
 | 过滤阶段 | 位点数 | 文件大小 | 过滤率 |
 |----------|--------|----------|--------|
 | GLnexus 原始 joint calling | **172,795,734** | 73 GB | — |
-| dp3-20.gq5.siteDP4-20.siteGQ10 | ~160M (估) | 61 GB | ~7% |
+| dp3-20.gq5.siteDP4-20.siteGQ10 | **170,848,949** | 61 GB | 1.1% |
 | + maf0.05.minAllele2.maxMissing0.8 | **11,770,807** | 7.2 GB | 93.2% |
 | + maf0.05.minAllele2.maxMissing0.4 | **24,216,624** | 15 GB | 86.0% |
 
@@ -29,7 +29,7 @@ tags: [variant-counts, qc, filtering]
 ```
 172,795,734  ← GLnexus raw (不含1to10)
       ↓ dp3-20, gq5, siteDP4-20, siteGQ10
- ~160,000,000  ← 基础过滤
+170,848,949  ← 基础过滤 (仅去除 1.1%)
       ↓ maf0.05, minAllele2, maxMissing0.8
  11,770,807  ← 群体遗传学用 (保留 6.8%)
       ↓ maxMissing 更严格 0.4
@@ -37,7 +37,7 @@ tags: [variant-counts, qc, filtering]
                  (0.4 要求每个位点更少的缺失样本 = 更多低覆盖位点被保留)
 ```
 
-> **注意**：maxMissing0.4 位点数 (24M) > maxMissing0.8 (11.7M)，这是因为 maxMissing 是上限值，0.4 的要求比 0.8 更严格（允许更少的缺失），但 MAF 和 minAllele 过滤逻辑导致了非单调变化。
+> **关键发现**：基础 DP/GQ 过滤仅去除 1.1% 的位点（1.9M/172.8M），真正的过滤效果来自 MAF + maxMissing 组合（去除 93%）。maxMissing0.4 位点数 (24M) > maxMissing0.8 (11.7M)，这是因为两个版本跑了不同的分析脚本，位点抽样和 LD 剪枝参数可能不同。
 
 ## GLnexus 运行信息
 
