@@ -33,3 +33,9 @@
 - 文件: `/home/descfly/bioinfo-kb/inbox/20260604-165747.md`
 - 内容预览: ## 测试摄入 这是从 Codex 或其他工具自动保存的分析记录。 - 脚本: test.sh 
 
+
+## [2026-06-04 19:01:25] 自动摄入 (message)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260604-190125.md`
+- 内容预览: # Tajik 公共位点 VCF 过滤、ADMIXTURE/PCA 与 IQ-TREE 分析记录  日期：2026-06-04 
+
