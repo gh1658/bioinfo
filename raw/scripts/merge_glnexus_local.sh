@@ -1,0 +1,1 @@
+/data1/gh/sy/vcf/merge_glnexus_local.sh

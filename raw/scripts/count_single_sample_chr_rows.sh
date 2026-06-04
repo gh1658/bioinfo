@@ -1,0 +1,1 @@
+/data1/gh/sy/vcf/count_single_sample_chr_rows.sh

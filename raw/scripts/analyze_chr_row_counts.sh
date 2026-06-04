@@ -1,0 +1,1 @@
+/data1/gh/sy/vcf/analyze_chr_row_counts.sh

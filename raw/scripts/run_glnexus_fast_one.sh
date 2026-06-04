@@ -1,0 +1,1 @@
+/data1/gh/sy/vcf/run_glnexus_fast_one.sh

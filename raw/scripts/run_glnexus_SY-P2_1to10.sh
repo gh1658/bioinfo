@@ -1,0 +1,1 @@
+/data1/gh/sy/vcf/run_glnexus_SY-P2_1to10.sh
