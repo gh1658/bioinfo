@@ -77,3 +77,9 @@
 - 文件: `/data1/gh/bioinfo-kb/inbox/20260605-175109.md`
 - 内容预览: Task: 更新 Tajik 版本 PCA 图为四亚群展示，并输出四个亚群的 PC1/PC2 局部放大图。  Scripts/commands: Rscript scripts/plot_admixture_pca_tree.R --outdir admixture_pca_tree_tajik --sample-map sampleName_clientId.txt 
 
+
+## [2026-06-05 17:55:04] 自动摄入 (stdin)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260605-175504.md`
+- 内容预览: Task: 按 Tajik 公共位点版当前 201 个样本更新四亚群分组样品文件，并同步知识库。  Scripts/commands: Rscript 脚本片段读取 admixture_pca_tree_tajik/ld_pruned.fam 与 sampleName_clientId.txt，按旧分组文件的细分组前缀映射重建 分组样品/TAJ.txt、分组样品/xj.txt、分组样品/GNN.txt、分组样品/NM.txt；随后运行 Rscript scripts/plot_admixture_pca_tree.R --outdir admixture_pca_tree_tajik --sample-map sampleName_clientId.txt 验证绘图。 
+

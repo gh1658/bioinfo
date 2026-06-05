@@ -32,9 +32,18 @@ tags: [population-genetics, admixture, pca, visualization, sy]
 | 亚群代码 | 俗称 | 分组样品文件 | 样本数 | 固定颜色 |
 |----------|------|--------------|--------|----------|
 | TAJ | 塔吉克 | `/data1/gh/sy/vcf/分组样品/TAJ.txt` | 10 | `#3C5488FF` |
-| XJ | 新疆 | `/data1/gh/sy/vcf/分组样品/xj.txt` | 60 | `#E64B35FF` |
-| GNN | 甘肃 | `/data1/gh/sy/vcf/分组样品/GNN.txt` | 80 | `#4DBBD5FF` |
+| XJ | 新疆 | `/data1/gh/sy/vcf/分组样品/xj.txt` | 57 | `#E64B35FF` |
+| GNN | 甘肃 | `/data1/gh/sy/vcf/分组样品/GNN.txt` | 79 | `#4DBBD5FF` |
 | NM | 内蒙 | `/data1/gh/sy/vcf/分组样品/NM.txt` | 55 | `#00A087FF` |
+
+当前分组样品文件已按 Tajik 公共位点版 `admixture_pca_tree_tajik/ld_pruned.fam` 的 201 个样本更新，总计：
+
+- `TAJ`: 10
+- `XJ`: 57
+- `GNN`: 79
+- `NM`: 55
+
+旧分组文件中不在当前 201 样本里的条目已移除：`A1-3`、`A1-4`、`A2-2`、`A6-15`、`A10-5`。当前 201 样本中的 `A2-3` 已按 `A2` 细分组归入 `XJ`。
 
 ## 固定配色
 
