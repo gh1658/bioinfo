@@ -104,3 +104,9 @@
   - `index.md`
 - **归档**：已将三条 inbox 记录移至 `inbox/archive/`
 - **状态**：已完成
+
+## [2026-06-05 21:31:47] 自动摄入 (stdin)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260605-213147.md`
+- 内容预览: Task: 排查 Tajik 版 PCA 图中 PC1/PC2 解释率异常偏高的问题，并修正绘图和 PCA 输出。  Scripts/commands: 检查 scripts/run_admixture_pca_tree.sh、scripts/plot_admixture_pca_tree.R 与 admixture_pca_tree_tajik/pca.log；运行 plink --bfile admixture_pca_tree_tajik/ld_pruned --pca 200 --out admixture_pca_tree_tajik/pca；运行 Rscript scripts/plot_admixture_pca_tree.R --outdir admixture_pca_tree_tajik --sample-map sampleName_clientId.txt。 
+
