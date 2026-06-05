@@ -53,3 +53,21 @@
   - `wiki/params/admixture-params.md`
   - `index.md`
 - **状态**：已完成
+
+
+## [2026-06-05] 记录松叶猪毛菜四亚群与固定配色
+
+- **操作**：记录项目背景、后续默认数据版本、四个亚群解释标准和统一绘图配色
+- **项目**：松叶猪毛菜遗传多样性分析；西北干旱区植物
+- **后续默认版本**：带 Tajik 版本
+- **解释标准**：结合 `K=4` 时 CV 曲线斜率变化最大与 PCA 四组结果，后续按四个亚群展示
+- **亚群与颜色**：
+  - TAJ（塔吉克）：`#3C5488FF`
+  - XJ（新疆）：`#E64B35FF`
+  - GNN（甘肃）：`#4DBBD5FF`
+  - NM（内蒙）：`#00A087FF`
+- **新增页面**：`wiki/params/subpopulation-groups-colors.md`
+- **更新页面**：
+  - `wiki/results/population-structure.md`
+  - `index.md`
+- **状态**：已完成

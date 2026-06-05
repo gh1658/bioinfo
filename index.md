@@ -72,6 +72,7 @@
 | [[filtering-params]] | VCF 过滤参数组合（DP/GQ/siteDP/siteGQ/MAF/minAllele/maxMissing） |
 | [[glnexus-params]] | GLnexus 运行参数（线程、内存、染色体列表） |
 | [[admixture-params]] | ADMIXTURE K 值范围、seed、交叉验证参数 |
+| [[subpopulation-groups-colors]] | 松叶猪毛菜四个亚群与固定配色 |
 
 ## 结果摘要 (wiki/results/)
 

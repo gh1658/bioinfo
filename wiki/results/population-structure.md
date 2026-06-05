@@ -10,6 +10,8 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 
 对过滤后的高质量 SNP 位点进行群体结构分析，以了解样本间的遗传关系。
 
+本项目为**松叶猪毛菜遗传多样性分析**，研究对象属于**西北干旱区植物**。后续分析默认使用带 Tajik 版本，并按四个亚群展示：TAJ（塔吉克）、XJ（新疆）、GNN（甘肃）、NM（内蒙）。四亚群固定配色见 [[subpopulation-groups-colors]]。
+
 ## ADMIXTURE 结果
 
 ### 运行配置
@@ -76,7 +78,19 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 - 同样包含 ADMIXTURE/PCA/IQ-TREE 全套分析
 - `ggtree` 圆形树图在当前 R 环境存在版本冲突；已使用 [[plot-iqtree-tree-nature]] 的 non-ggtree 圆形 cladogram 输出。
 
+### Tajik 版本后续解释标准
+
+虽然 Tajik 版本 ADMIXTURE 平均 CV error 最低对应 `K=7`，但结合 `K=4` 时 CV 曲线斜率变化最大、PCA 可分为四组，以及地理来源解释，后续采用 `K=4` 作为松叶猪毛菜四个亚群的解释标准：
+
+| 亚群代码 | 俗称 | 固定颜色 |
+|----------|------|----------|
+| TAJ | 塔吉克 | `#3C5488FF` |
+| XJ | 新疆 | `#E64B35FF` |
+| GNN | 甘肃 | `#4DBBD5FF` |
+| NM | 内蒙 | `#00A087FF` |
+
 ## 相关笔记
+- [[subpopulation-groups-colors]] — 四个亚群与固定配色
 - [[admixture-result-folders]] — 三个结果目录统一汇总
 - [[admixture-pca-tree]] — 完整分析流程
 - [[admixture-params]] — ADMIXTURE 参数
