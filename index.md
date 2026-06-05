@@ -101,3 +101,4 @@
 | [[glnexus-oom]] | GLnexus 内存溢出问题 |
 | [[vcf-chr-mismatch]] | VCF 染色体编号不匹配 |
 | [[deepvariant-filter-quality]] | DeepVariant 过滤质量标记问题 |
+| [[ggtree-r-version-conflict]] | R/ggplot2/Bioconductor 版本链导致 ggtree 安装或加载失败 |

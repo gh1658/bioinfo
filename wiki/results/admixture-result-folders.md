@@ -136,6 +136,12 @@ tags: [population-genetics, admixture, pca, iqtree, results, sy]
 - `admixture_K2_K10_nature_sample_order.png`
 - `admixture_cv_nature.png`
 - `pca_PC1_PC2_nature.png`
+- `pca_PC1_PC2_subgroups_nature.png`
+- `pca_PC1_PC2_TAJ_zoom_nature.png`
+- `pca_PC1_PC2_XJ_zoom_nature.png`
+- `pca_PC1_PC2_GNN_zoom_nature.png`
+- `pca_PC1_PC2_NM_zoom_nature.png`
+- `pca_subgroup_counts.tsv`
 - `iqtree_5k_per_chr/tajik_biallelic_snps.5k_per_chr.iqtree.treefile`
 - `iqtree_5k_per_chr/tajik_biallelic_snps.5k_per_chr.iqtree.nature_tree.png`
 - `iqtree_5k_per_chr/tajik_biallelic_snps.5k_per_chr.iqtree.nature_circular_cladogram.bootstrap.png`
@@ -144,7 +150,7 @@ tags: [population-genetics, admixture, pca, iqtree, results, sy]
 
 - 标准版曾成功生成 `ggtree_circular.bootstrap.png`。
 - maxMissing0.8 版和 Tajik 版使用 `plot_iqtree_tree_nature.R` 中不依赖 ggtree 的圆形 cladogram 输出。
-- Tajik 版中尝试安装 `ggtree` 时发现当前 `R 4.1.2 / Bioconductor 3.14 / ggplot2` 版本链不兼容，后续同类任务除非明确需要 ggtree，否则优先使用 non-ggtree 圆形树图。
+- Tajik 版中尝试安装 `ggtree` 时发现当前 `R 4.1.2 / Bioconductor 3.14 / ggplot2` 版本链不兼容，后续同类任务除非明确需要 ggtree，否则优先使用 non-ggtree 圆形树图；详见 [[ggtree-r-version-conflict]]。
 
 ## 相关页面
 
@@ -154,3 +160,4 @@ tags: [population-genetics, admixture, pca, iqtree, results, sy]
 - [[run-admixture-pca-tree]]
 - [[run-iqtree-5k-per-chr]]
 - [[plot-iqtree-tree-nature]]
+- [[ggtree-r-version-conflict]]

@@ -83,3 +83,24 @@
 - 文件: `/data1/gh/bioinfo-kb/inbox/20260605-175504.md`
 - 内容预览: Task: 按 Tajik 公共位点版当前 201 个样本更新四亚群分组样品文件，并同步知识库。  Scripts/commands: Rscript 脚本片段读取 admixture_pca_tree_tajik/ld_pruned.fam 与 sampleName_clientId.txt，按旧分组文件的细分组前缀映射重建 分组样品/TAJ.txt、分组样品/xj.txt、分组样品/GNN.txt、分组样品/NM.txt；随后运行 Rscript scripts/plot_admixture_pca_tree.R --outdir admixture_pca_tree_tajik --sample-map sampleName_clientId.txt 验证绘图。 
 
+## [2026-06-05] 整理 Tajik 公共位点与四亚群收件箱记录
+
+- **操作**：处理 `inbox/20260604-190125.md`、`inbox/20260605-175109.md`、`inbox/20260605-175504.md`
+- **整理内容**：
+  - Tajik 公共位点 VCF 过滤、ADMIXTURE/PCA 与 IQ-TREE 流程
+  - Tajik PCA 四亚群主图和局部放大图输出
+  - 当前 201 样本四亚群分组文件与样本数
+  - `ggtree` 与当前 R/ggplot2/Bioconductor 版本链不兼容问题
+- **新增页面**：
+  - `wiki/scripts/plot-admixture-pca-tree.md`
+  - `wiki/scripts/run-iqtree-5k-per-chr.md`
+  - `wiki/scripts/plot-iqtree-tree-nature.md`
+  - `wiki/troubleshooting/ggtree-r-version-conflict.md`
+- **更新页面**：
+  - `wiki/workflows/admixture-pca-tree.md`
+  - `wiki/results/population-structure.md`
+  - `wiki/results/admixture-result-folders.md`
+  - `wiki/params/subpopulation-groups-colors.md`
+  - `index.md`
+- **归档**：已将三条 inbox 记录移至 `inbox/archive/`
+- **状态**：已完成

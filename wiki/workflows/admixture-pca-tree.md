@@ -20,6 +20,29 @@ tags: [population-genetics, admixture, pca, phylogenetics]
 
 - 过滤后的 VCF（如 `merge_*.filtered.*.maf0.05.minAllele2.maxMissing0.8.vcf.gz`）
 
+### Tajik 公共位点标准版本
+
+后续松叶猪毛菜群体结构解释默认使用带 Tajik 的公共位点版本：
+
+- 输入 VCF：`/data1/gh/sy/vcf/glnexus_merge/P2_with_others_missing70_50_joint/P2_plus_others.P2min7.othermin96.merged.vcf.gz`
+- 过滤输出：`/data1/gh/sy/vcf/admixture_pca_tree_tajik/tajik.maf0.05.minAllele2.maxAllele2.vcf.gz`
+- 结果目录：`/data1/gh/sy/vcf/admixture_pca_tree_tajik`
+- 样本数：201
+- 过滤后位点数：1,034,322
+- 四亚群解释标准：[[subpopulation-groups-colors]]
+
+过滤参数：
+
+```bash
+vcftools \
+  --gzvcf input.vcf.gz \
+  --maf 0.05 \
+  --min-alleles 2 \
+  --max-alleles 2 \
+  --recode \
+  --stdout
+```
+
 ## 分析步骤
 
 ### 1. 位点抽样
@@ -98,6 +121,13 @@ Rscript scripts/plot_iqtree_tree_nature.R
 Rscript scripts/plot_iqtree_tree_ggtree_circular.R
 ```
 
+Tajik 公共位点版本的 IQ-TREE 使用：
+
+- 每条染色体抽样 `5000` 个 SNP，总计 45,000 位点
+- `GTR+ASC`
+- ultrafast bootstrap `1000`
+- `plot_iqtree_tree_nature.R` 的 non-ggtree 圆形 cladogram 作为默认圆形树图
+
 ## 参数汇总
 
 | 步骤 | 参数 | 值 |
@@ -108,7 +138,7 @@ Rscript scripts/plot_iqtree_tree_ggtree_circular.R
 | ADMIXTURE | seeds | 1-5 |
 | ADMIXTURE | CV folds | 10 |
 | IQ-TREE | bootstrap | 1000 |
-| IQ-TREE | 模型 | MFP (自动) |
+| IQ-TREE | 模型 | 标准流程可用 MFP；Tajik 公共位点版使用 GTR+ASC |
 
 ## 输出目录结构
 
@@ -144,6 +174,8 @@ admixture_pca_tree/
 - PCA 最好用 LD 剪枝后的数据，避免 LD 引起的偏差
 - IQ-TREE `-m MFP` 会花时间做模型选择，大数据集可用 `-m GTR+G`
 - 结果目录名中的 `maxMissing0.8` 表示使用的过滤参数
+- Tajik 公共位点版当前按 201 个样本和四亚群 `TAJ / XJ / GNN / NM` 解释；分组文件见 [[subpopulation-groups-colors]]。
+- 当前 R 4.1.2 / Bioconductor 3.14 环境中 `ggtree` 与 `ggplot2` 版本链不兼容，圆形树图优先使用 [[plot-iqtree-tree-nature]] 中的 non-ggtree 实现；详见 [[ggtree-r-version-conflict]]。
 
 ## 相关笔记
 - [[vcf-filtering]] — 上游过滤
@@ -152,3 +184,4 @@ admixture_pca_tree/
 - [[plink]] — PLINK 工具笔记
 - [[admixture-params]] — 参数记录
 - [[population-structure]] — 结果摘要
+- [[ggtree-r-version-conflict]] — ggtree 依赖冲突记录

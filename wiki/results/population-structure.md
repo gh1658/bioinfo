@@ -47,6 +47,17 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 - PCA scatter plot（前几个 PCs）
 - 脚本：[[plot-admixture-pca-tree]]
 
+Tajik 公共位点版后续按四亚群展示：
+
+- 主图：`admixture_pca_tree_tajik/pca_PC1_PC2_subgroups_nature.png`
+- TAJ 局部放大：`admixture_pca_tree_tajik/pca_PC1_PC2_TAJ_zoom_nature.png`
+- XJ 局部放大：`admixture_pca_tree_tajik/pca_PC1_PC2_XJ_zoom_nature.png`
+- GNN 局部放大：`admixture_pca_tree_tajik/pca_PC1_PC2_GNN_zoom_nature.png`
+- NM 局部放大：`admixture_pca_tree_tajik/pca_PC1_PC2_NM_zoom_nature.png`
+- 四亚群计数：`admixture_pca_tree_tajik/pca_subgroup_counts.tsv`
+
+当前 Tajik PCA 四亚群计数为 `TAJ=10, XJ=57, GNN=79, NM=55`，合计 201 个样本。
+
 ## 系统发育树
 
 ### IQ-TREE 建树
@@ -76,7 +87,7 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 - 过滤后位点数：1,034,322
 - 样本数：201
 - 同样包含 ADMIXTURE/PCA/IQ-TREE 全套分析
-- `ggtree` 圆形树图在当前 R 环境存在版本冲突；已使用 [[plot-iqtree-tree-nature]] 的 non-ggtree 圆形 cladogram 输出。
+- `ggtree` 圆形树图在当前 R 环境存在版本冲突；已使用 [[plot-iqtree-tree-nature]] 的 non-ggtree 圆形 cladogram 输出，问题记录见 [[ggtree-r-version-conflict]]。
 
 ### Tajik 版本后续解释标准
 
@@ -96,3 +107,4 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 - [[admixture-params]] — ADMIXTURE 参数
 - [[admixture]] — ADMIXTURE 工具笔记
 - [[iqtree]] — IQ-TREE 工具笔记
+- [[ggtree-r-version-conflict]] — ggtree 依赖冲突记录

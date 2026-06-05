@@ -45,6 +45,11 @@ tags: [population-genetics, admixture, pca, visualization, sy]
 
 旧分组文件中不在当前 201 样本里的条目已移除：`A1-3`、`A1-4`、`A2-2`、`A6-15`、`A10-5`。当前 201 样本中的 `A2-3` 已按 `A2` 细分组归入 `XJ`。
 
+核对文件：
+
+- `/data1/gh/sy/vcf/分组样品/current_201_subgroup_assignments.tsv`
+- `/data1/gh/sy/vcf/分组样品/current_201_subgroup_counts.tsv`
+
 ## 固定配色
 
 后续所有图必须使用以下统一配色：
