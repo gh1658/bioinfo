@@ -1,6 +1,6 @@
 # index.md — 生信分析知识库目录
 
-> 最后更新：2026-06-04
+> 最后更新：2026-06-05
 > 自动维护，每次 ingest 后更新
 
 ## 分析流程 (workflows/)
@@ -79,6 +79,7 @@
 |------|------|
 | [[qc-metrics]] | 各批次 QC 指标汇总 |
 | [[population-structure]] | 群体结构分析结果（ADMIXTURE/PCA/树） |
+| [[admixture-result-folders]] | 三个 ADMIXTURE/PCA/IQ-TREE 结果目录汇总 |
 | [[variant-counts]] | 各阶段变异位点数量变化 |
 
 ## 工具笔记 (wiki/tools/)

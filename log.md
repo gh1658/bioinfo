@@ -39,3 +39,17 @@
 - 文件: `/data1/gh/bioinfo-kb/inbox/20260604-190125.md`
 - 内容预览: # Tajik 公共位点 VCF 过滤、ADMIXTURE/PCA 与 IQ-TREE 分析记录  日期：2026-06-04 
 
+
+## [2026-06-05] 整理三个 ADMIXTURE 结果目录
+
+- **操作**：将三个 ADMIXTURE/PCA/IQ-TREE 结果目录整理进正式 wiki 页面
+- **结果目录**：
+  - `/data1/gh/sy/vcf/admixture_pca_tree`
+  - `/data1/gh/sy/vcf/admixture_pca_tree_maxMissing0.8`
+  - `/data1/gh/sy/vcf/admixture_pca_tree_tajik`
+- **新增页面**：`wiki/results/admixture-result-folders.md`
+- **更新页面**：
+  - `wiki/results/population-structure.md`
+  - `wiki/params/admixture-params.md`
+  - `index.md`
+- **状态**：已完成

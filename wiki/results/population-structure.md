@@ -16,6 +16,7 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 - K = 2 到 10
 - 每个 K 值 5 个 seed 重复
 - 交叉验证 (CV=10)
+- LD pruning：`50 10 0.2`
 
 ### 结果文件
 - 位置：`admixture_pca_tree/admixture_runs/`
@@ -23,7 +24,13 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 - P 文件：每个 SNP 的等位基因频率
 
 ### CV Error（最佳 K 值判断）
-(待填入实际 CV error 数据)
+详见 [[admixture-result-folders]] 和 [[admixture-params]]。
+
+| 版本 | 样本数 | raw SNP | LD-pruned SNP | 最低平均 CV 对应 K | 最低平均 CV |
+|------|--------|---------|---------------|--------------------|-------------|
+| 标准版 | 191 | 23,090,362 | 1,230,099 | K=5 | 0.36306 |
+| maxMissing0.8 版 | 191 | 11,203,190 | 586,998 | K=6 | 0.33089 |
+| Tajik 公共位点版 | 201 | 1,000,680 | 51,481 | K=7 | 0.36769 |
 
 ### 可视化
 - ADMIXTURE bar plot：按群体排序的祖源成分图
@@ -42,7 +49,7 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 
 ### IQ-TREE 建树
 - 每条染色体抽样 5000 个 SNP
-- 模型自动选择 (MFP)
+- 当前三个结果目录均为 9 条染色体，共 45,000 个抽样位点
 - 1000 次超快 bootstrap
 
 ### 结果文件
@@ -59,7 +66,18 @@ tags: [population-genetics, admixture, pca, iqtree, results]
 - 位置：`admixture_pca_tree_maxMissing0.8/`
 - 同样包含 ADMIXTURE/PCA/IQ-TREE 全套分析
 
+## Tajik 公共位点版本结果
+
+使用 P2 与其余样本公共位点 VCF 的单独分析：
+- 位置：`admixture_pca_tree_tajik/`
+- 输入过滤结果：`tajik.maf0.05.minAllele2.maxAllele2.vcf.gz`
+- 过滤后位点数：1,034,322
+- 样本数：201
+- 同样包含 ADMIXTURE/PCA/IQ-TREE 全套分析
+- `ggtree` 圆形树图在当前 R 环境存在版本冲突；已使用 [[plot-iqtree-tree-nature]] 的 non-ggtree 圆形 cladogram 输出。
+
 ## 相关笔记
+- [[admixture-result-folders]] — 三个结果目录统一汇总
 - [[admixture-pca-tree]] — 完整分析流程
 - [[admixture-params]] — ADMIXTURE 参数
 - [[admixture]] — ADMIXTURE 工具笔记
