@@ -71,3 +71,9 @@
   - `wiki/results/population-structure.md`
   - `index.md`
 - **状态**：已完成
+
+## [2026-06-05 17:51:09] 自动摄入 (stdin)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260605-175109.md`
+- 内容预览: Task: 更新 Tajik 版本 PCA 图为四亚群展示，并输出四个亚群的 PC1/PC2 局部放大图。  Scripts/commands: Rscript scripts/plot_admixture_pca_tree.R --outdir admixture_pca_tree_tajik --sample-map sampleName_clientId.txt 
+
