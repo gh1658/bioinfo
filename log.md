@@ -110,3 +110,9 @@
 - 文件: `/data1/gh/bioinfo-kb/inbox/20260605-213147.md`
 - 内容预览: Task: 排查 Tajik 版 PCA 图中 PC1/PC2 解释率异常偏高的问题，并修正绘图和 PCA 输出。  Scripts/commands: 检查 scripts/run_admixture_pca_tree.sh、scripts/plot_admixture_pca_tree.R 与 admixture_pca_tree_tajik/pca.log；运行 plink --bfile admixture_pca_tree_tajik/ld_pruned --pca 200 --out admixture_pca_tree_tajik/pca；运行 Rscript scripts/plot_admixture_pca_tree.R --outdir admixture_pca_tree_tajik --sample-map sampleName_clientId.txt。 
 
+
+## [2026-06-06 12:01:08] 自动摄入 (stdin)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260606-120108.md`
+- 内容预览: Task: 按用户确认回退 Tajik PCA 到常用的前 20 个主成分版本，并恢复 PC1/PC2 标签为前 20 PC 内部解释率。  Scripts/commands: 修改 scripts/run_admixture_pca_tree.sh 恢复 plink --pca 20；修改 scripts/plot_admixture_pca_tree.R 恢复直接使用 pca.eigenval 计算 variance=eigenval/sum(eigenval)*100；运行 plink --bfile admixture_pca_tree_tajik/ld_pruned --pca 20 --out admixture_pca_tree_tajik/pca；运行 Rscript scripts/plot_admixture_pca_tree.R --outdir admixture_pca_tree_tajik --sample-map sampleName_clientId.txt。 
+
