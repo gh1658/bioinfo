@@ -134,3 +134,9 @@
 - 文件: `/data1/gh/bioinfo-kb/inbox/20260608-201802.md`
 - 内容预览: # 带 Tajik 过滤 VCF 的四亚群 LD decay 计算  ## 项目与目的 
 
+
+## [2026-06-08 20:26:13] 自动摄入 (stdin)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260608-202613.md`
+- 内容预览: # 最终版记录：带 Tajik 过滤 VCF 四亚群 LD decay 与样本分组  ## 覆盖说明 
+
