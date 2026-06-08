@@ -128,3 +128,9 @@
 - 文件: `/data1/gh/bioinfo-kb/inbox/20260608-200141.md`
 - 内容预览: # LD decay 更正重跑：带 Tajik 版本 VCF  ## 背景 
 
+
+## [2026-06-08 20:18:02] 自动摄入 (stdin)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260608-201802.md`
+- 内容预览: # 带 Tajik 过滤 VCF 的四亚群 LD decay 计算  ## 项目与目的 
+
