@@ -122,3 +122,9 @@
 - 文件: `/data1/gh/bioinfo-kb/inbox/20260608-193303.md`
 - 内容预览: # LD decay 试跑：未过滤 VCF 与 MAF/maxMissing 过滤 VCF 对照  ## 项目 
 
+
+## [2026-06-08 20:01:41] 自动摄入 (stdin)
+
+- 文件: `/data1/gh/bioinfo-kb/inbox/20260608-200141.md`
+- 内容预览: # LD decay 更正重跑：带 Tajik 版本 VCF  ## 背景 
+
