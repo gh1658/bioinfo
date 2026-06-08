@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "inbox/20260604-190125.md",
+                "file": "wiki/results/population-structure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20260604-190125"
+              "title": "population-structure"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "section:(iqtree)",
+                "query": "pca",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,28 +185,46 @@
   },
   "active": "3c24981d67197ea3",
   "lastOpenFiles": [
-    "wiki/params/subpopulation-groups-colors.md",
-    "index.md",
-    "inbox/20260604-190125.md",
-    "wiki/workflows/glnexus-joint-calling.md",
-    "wiki/workflows/deepvariant-calling.md",
     "wiki/workflows/admixture-pca-tree.md",
-    "wiki/results/population-structure.md",
-    "wiki/results/admixture-result-folders.md",
-    "raw/results/admixture_pca_tree/admixture_K2_K10_nature_sample_order.pdf",
-    "wiki/tools/iqtree.md",
-    "wiki/tools/admixture.md",
+    "wiki/results/qc-metrics.md",
+    "wiki/workflows/vcf-filtering.md",
+    "wiki/workflows/deepvariant-calling.md",
+    "wiki/troubleshooting/vcf-chr-mismatch.md",
+    "wiki/troubleshooting/glnexus-oom.md",
+    "wiki/troubleshooting/ggtree-r-version-conflict.md",
+    "wiki/troubleshooting/deepvariant-filter-quality.md",
     "wiki/params/admixture-params.md",
-    "glnexus-merged-metrics.md",
-    "wiki/tools/bcftools.md",
+    "inbox/20260606-120108.md",
+    "raw/scripts/vcf-scripts/deepvariant_remote_metrics.md",
+    "HANDOFF.md",
+    "CLAUDE.md",
+    "wiki/workflows/glnexus-joint-calling.md",
+    "wiki/tools/admixture.md",
     "inbox/README.md",
+    "index.md",
+    "inbox/archive/20260604-190125.md",
+    "run-glnexus-by-chr-include70.md",
+    "inbox/20260605-213147.md",
+    "inbox/archive/20260605-175504.md",
+    "inbox/archive/20260605-175109.md",
+    "templates/workflow-template.md",
+    "templates/script-template.md",
+    "templates/run-record-template.md",
+    "wiki/params/subpopulation-groups-colors.md",
+    "raw/results/admixture_pca_tree/pca_PC1_PC2_nature.pdf",
+    "raw/results/reports/deepvariant_remote_metrics/plots/population_gq_histogram.png",
+    "raw/results/reports/deepvariant_remote_metrics/plots/population_dp_histogram.png",
+    "raw/results/reports/deepvariant_remote_metrics/plots/missing_rate.png",
+    "raw/results/reports/deepvariant_remote_metrics/plots/mean_gq.png",
+    "raw/results/reports/deepvariant_remote_metrics/plots/mean_dp.png",
+    "inbox/archive",
+    "raw/results/admixture_pca_tree/admixture_K2_K10_nature_sample_order.pdf",
     "raw/results/reports/SY-P2_1to10_user_script_stat_sample/plots/depth_density.png",
     "raw/results/admixture_pca_tree/admixture_K2_K10_nature_clustered.png",
     "raw/results/admixture_pca_tree/admixture_K2_K10_nature_clustered.pdf",
     "raw/results/admixture_pca_tree/admixture_K2_K10_nature.png",
     "raw/results/admixture_pca_tree/admixture_K2_K10_nature.pdf",
     "raw/results/admixture_pca_tree/admixture_cv_nature.png",
-    "raw/results/admixture_pca_tree/admixture_cv_nature.pdf",
-    "wiki/results/qc-metrics.md"
+    "raw/results/admixture_pca_tree/admixture_cv_nature.pdf"
   ]
 }

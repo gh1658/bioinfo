@@ -16,22 +16,22 @@
 ## 脚本库 (wiki/scripts/)
 
 ### Shell 脚本
-| 脚本 | 功能 | 路径 |
-|------|------|------|
-| [[run-glnexus-by-chr]] | GLnexus 按染色体并行 joint calling | `run_glnexus_by_chr.sh` |
-| [[run-glnexus-fast-one]] | GLnexus 快速单次合并 | `run_glnexus_fast_one.sh` |
-| [[run-glnexus-SY-P2-1to10]] | SY-P2 组 1-10 号样本 joint calling | `run_glnexus_SY-P2_1to10.sh` |
-| [[merge-glnexus-local]] | 本地 GLnexus 合并 | `merge_glnexus_local.sh` |
-| [[count-single-sample-chr-rows]] | 统计单样本各染色体变异数 | `count_single_sample_chr_rows.sh` |
-| [[analyze-chr-row-counts]] | 分析染色体行数统计 | `analyze_chr_row_counts.sh` |
-| [[filter-without-1to10-core]] | 过滤不含 1to10 核心样本的 VCF | `filter_without_1to10_core.sh` |
-| [[run-admixture-pca-tree]] | ADMIXTURE + PCA + 建树流程 | `scripts/run_admixture_pca_tree.sh` |
-| [[run-filter-maf005-minAllele2]] | MAF 0.05, minAllele2 过滤 | `scripts/run_filter_maf0.05_minAllele2.sh` |
-| [[run-filter-maf005-minAllele2-maxMissing08]] | MAF 0.05 + maxMissing 0.8 过滤 | `scripts/run_filter_maf0.05_minAllele2_maxMissing0.8.sh` |
-| [[run-iqtree-5k-per-chr]] | 每条染色体 5k 位点 IQ-TREE 建树 | `scripts/run_iqtree_5k_per_chr.sh` |
-| [[run-maxMissing08-admixture-pca-tree]] | maxMissing 0.8 过滤后群体结构分析 | `scripts/run_maxMissing0.8_admixture_pca_tree.sh` |
-| [[shuf-vcf-sites]] | 随机抽样 VCF 位点 | `scripts/shuf_vcf_sites.sh` |
-| [[shuf-vcf-sites-text]] | 文本模式随机抽样 VCF 位点 | `scripts/shuf_vcf_sites_text.sh` |
+| 脚本                                            | 功能                             | 路径                                                       |
+| --------------------------------------------- | ------------------------------ | -------------------------------------------------------- |
+| [[run-glnexus-by-chr]]                        | GLnexus 按染色体并行 joint calling   | `run_glnexus_by_chr.sh`                                  |
+| [[run-glnexus-fast-one]]                      | GLnexus 快速单次合并                 | `run_glnexus_fast_one.sh`                                |
+| [[run-glnexus-SY-P2-1to10]]                   | SY-P2 组 1-10 号样本 joint calling | `run_glnexus_SY-P2_1to10.sh`                             |
+| [[merge-glnexus-local]]                       | 本地 GLnexus 合并                  | `merge_glnexus_local.sh`                                 |
+| [[count-single-sample-chr-rows]]              | 统计单样本各染色体变异数                   | `count_single_sample_chr_rows.sh`                        |
+| [[analyze-chr-row-counts]]                    | 分析染色体行数统计                      | `analyze_chr_row_counts.sh`                              |
+| [[filter-without-1to10-core]]                 | 过滤不含 1to10 核心样本的 VCF           | `filter_without_1to10_core.sh`                           |
+| [[run-admixture-pca-tree]]                    | ADMIXTURE + PCA + 建树流程         | `scripts/run_admixture_pca_tree.sh`                      |
+| [[run-filter-maf005-minAllele2]]              | MAF 0.05, minAllele2 过滤        | `scripts/run_filter_maf0.05_minAllele2.sh`               |
+| [[run-filter-maf005-minAllele2-maxMissing08]] | MAF 0.05 + maxMissing 0.8 过滤   | `scripts/run_filter_maf0.05_minAllele2_maxMissing0.8.sh` |
+| [[run-iqtree-5k-per-chr]]                     | 每条染色体 5k 位点 IQ-TREE 建树         | `scripts/run_iqtree_5k_per_chr.sh`                       |
+| [[run-maxMissing08-admixture-pca-tree]]       | maxMissing 0.8 过滤后群体结构分析       | `scripts/run_maxMissing0.8_admixture_pca_tree.sh`        |
+| [[shuf-vcf-sites]]                            | 随机抽样 VCF 位点                    | `scripts/shuf_vcf_sites.sh`                              |
+| [[shuf-vcf-sites-text]]                       | 文本模式随机抽样 VCF 位点                | `scripts/shuf_vcf_sites_text.sh`                         |
 
 ### Python 脚本
 | 脚本 | 功能 | 路径 |
